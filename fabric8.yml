@@ -1,0 +1,14 @@
+---
+pipeline: "vars/release.groovy"
+buildName: "james"
+codeReview: false
+links:
+  Job: "http://jenkins.vagrant.f8/job/james"
+  Production: "http://fabric8.vagrant.f8/kubernetes/pods?namespace=james-prod"
+  Staging: "http://fabric8.vagrant.f8/kubernetes/pods?namespace=james-staging"
+  Testing: "http://fabric8.vagrant.f8/kubernetes/pods?namespace=james-testing"
+environments:
+  Testing: "james-testing"
+  Staging: "james-staging"
+  Production: "james-prod"
+useLocalFlow: true
